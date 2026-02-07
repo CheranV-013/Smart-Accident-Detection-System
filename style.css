@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #020617;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Animated Background Glow */
+.bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #2563eb55, transparent);
+  filter: blur(120px);
+  animation: float 8s infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translate(-100px, -50px); }
+  to { transform: translate(100px, 80px); }
+}
+
+.container {
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* Glass Card */
+.card {
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.07);
+  padding: 30px;
+  border-radius: 22px;
+  width: 400px;
+  box-shadow: 0 0 60px rgba(0,0,0,0.6);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Status Circle */
+.status-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  background: #22c55e;
+  box-shadow: 0 0 12px #22c55e;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 17px;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+#forceBar {
+  height: 100%;
+  width: 10%;
+  background: linear-gradient(90deg,#22c55e,#16a34a);
+  transition: 0.4s;
+}
+
+/* Status Colors */
+.safe {
+  color: #22c55e;
+}
+
+.danger {
+  color: #ef4444;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
