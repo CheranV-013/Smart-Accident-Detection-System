@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Accident Detection Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+  <h1>Accident Detection Pro</h1>
+  <p class="subtitle">AI-Powered Real-Time Vehicle Safety Monitor</p>
+
+  <div class="card">
+
+    <div class="status-circle" id="statusCircle"></div>
+
+    <div class="row">
+      <span>System Status</span>
+      <span id="status" class="safe">SAFE</span>
+    </div>
+
+    <div class="row">
+      <span>Impact Force</span>
+      <span id="force">-- g</span>
+    </div>
+
+    <div class="progress-bar">
+      <div id="forceBar"></div>
+    </div>
+
+    <div class="row">
+      <span>Location</span>
+      <span id="location">--</span>
+    </div>
+
+    <div class="row">
+      <span>Direction</span>
+      <span id="direction">--</span>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
