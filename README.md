@@ -97,7 +97,4 @@ project-folder/
 
 ---
 
-## Authors
-Developed as an IoT safety solution project for accident prevention and rapid emergency response.
 
----
